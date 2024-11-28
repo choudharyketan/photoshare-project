@@ -1,0 +1,13 @@
+<div class="container text-center mt-5">
+  <h1 class="display-4">PhotoShare</h1>
+  <p class="lead">Share, Discover, Inspire</p>
+  
+  {{#if user}}
+    <a href="/dashboard" class="btn btn-primary btn-lg">My Dashboard</a>
+  {{else}}
+    <div class="mt-4">
+      <a href="/login" class="btn btn-primary mr-3">Login</a>
+      <a href="/register" class="btn btn-outline-primary">Register</a>
+    </div>
+  {{/if}}
+</div>
